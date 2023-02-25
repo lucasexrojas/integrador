@@ -707,12 +707,20 @@ iframe {
     color: white;
 }
 
+.footer-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: initial;
+    width: 90%;
+}
 
 .footer__list {
     display: flex;
-    flex-direction: row;
     gap: 5px 40px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer__list li a {
