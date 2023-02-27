@@ -58,6 +58,17 @@
     }
     
 
+    .offers__categories a {
+        font-size: 16px;
+    }
+
+    .offers__info {
+        max-width: 290px;
+    }
+
+    .offers__info img {
+        width: 170px;
+    }
 
     .footer-container-info {
         gap: 40px;

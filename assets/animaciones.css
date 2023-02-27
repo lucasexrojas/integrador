@@ -3,6 +3,45 @@ html {
     scroll-padding-top: 80px;
 }
 
+.hero__card,
+.offers__categories {
+    animation: move-right 1s linear;
+}
+
+@keyframes move-right {
+    0% {
+      transform: translateX(-700px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+
+.hero__info,
+.offers__container {
+    animation: move-left 1s linear;
+}
+
+@keyframes move-left {
+    0% {
+      transform: translateX(700px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+}
+  
+.btn:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.2s linear;    
+}
+
+.btn:active {
+    background: cornflowerblue; 
+    border: cornflowerblue 2px solid;
+}
+
 .overlay {
     display: none;
     position: absolute;
@@ -59,3 +98,68 @@ html {
     color: white;
 }
 
+
+.cart-icon:hover,
+.profile:hover,
+.toggle-menu:hover,
+.home:hover {
+    border-radius: 50%;
+    background: cornflowerblue;
+    padding: 10px;
+    transition: all 0.2s linear;
+}
+
+.cart-icon:active,
+.profile:active,
+.toggle-menu:active,
+.home:active {
+    color: black;
+    scale: 1.1;
+    transition: all 0.2s linear;
+}
+
+.shopping:hover {
+    color: black;
+    scale: 1.2;
+    transition: all 0.2s linear;
+    text-decoration: underline;
+}
+
+.shopping:active {
+    font-weight: 600;
+    scale: 1.1;
+}
+
+.offers__info:hover,
+.item-cart:hover {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.6);
+    transition: all 0.2s linear; 
+}
+
+#offers p a:hover {
+    color: cornflowerblue;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.4s linear;
+    max-width: 400px;
+    padding: 0px 10px;
+}
+
+.warranty__info:hover {
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.6);
+    transition: all 0.2s linear; 
+}
+
+.warranty__container img {
+    animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
