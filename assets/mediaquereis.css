@@ -73,6 +73,10 @@
         width: 170px;
     }
 
+    iframe {
+        height: 250px;
+    }
+
     .footer-container-info {
         gap: 40px;
     }
